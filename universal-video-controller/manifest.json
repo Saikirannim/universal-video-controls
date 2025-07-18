@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Universal Video Controls",
+  "version": "3.0.12",
+  "description": "Adds YouTube-like keyboard shortcuts to any HTML5 video player on the web.",
+  "permissions": [],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "icons": {
+    "16": "icons/icon16.svg",
+    "48": "icons/icon48.svg",
+    "128": "icons/icon128.svg"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "all_frames": true
+    }
+  ]
+}
